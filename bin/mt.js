@@ -2,6 +2,9 @@
 
 var path = require('path');
 var fs = require('fs');
+
+
+
 try {
 	//var localCli = path.join(path.resolve('.'), 'node_modules', 'marionette-cli', 'lib', 'cli');
 	var localCli = path.join(path.resolve('.'), 'lib', 'cli');
