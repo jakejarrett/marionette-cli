@@ -1,5 +1,5 @@
 {
-    "moduleType": "rjs",
+    "moduleType": "cjs",
     "moduleTypes": [
         "rjs",
         "cjs",
