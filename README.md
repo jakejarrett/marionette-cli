@@ -38,8 +38,8 @@ Command copying best practices (most stared examples of applications) from githu
 * `ES6` file content:<br/>
 ```javascript
 export default Marionette.LayoutView.extend({
-	//stuff
-	//Doc - http://marionettejs.com/docs/v2.4.4/marionette.layoutview.html
+    //stuff
+    //Doc - http://marionettejs.com/docs/v2.4.4/marionette.layoutview.html
 });
 ```
 [more](examples.md#es6)<br/>
@@ -48,8 +48,8 @@ export default Marionette.LayoutView.extend({
 ```javascript
 "use strict";
 var LayoutView = Marionette.LayoutView.extend({
-	//stuff
-	//Doc - http://marionettejs.com/docs/v2.4.4/marionette.layoutview.html
+    //stuff
+    //Doc - http://marionettejs.com/docs/v2.4.4/marionette.layoutview.html
 });
 module.exports = LayoutView;
 ```
@@ -58,12 +58,12 @@ module.exports = LayoutView;
 * `RequireJS` file content:<br/>
 ```javascript
 define(['marionette'], function (Marionette) {
-	"use strict";
-	var LayoutView = Marionette.LayoutView.extend({
-		//stuff
-		//Doc - http://marionettejs.com/docs/v2.4.4/marionette.layoutview.html
-	});
-	return LayoutView;
+    "use strict";
+    var LayoutView = Marionette.LayoutView.extend({
+        //stuff
+        //Doc - http://marionettejs.com/docs/v2.4.4/marionette.layoutview.html
+    });
+    return LayoutView;
 });
 ```
 [more](examples.md#requirejs)<br/>

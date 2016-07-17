@@ -7,8 +7,8 @@
 
 ```javascript
 export default Backbone.Model.extend({
-	//stuff
-	//Doc - http://backbonejs.org/#Model
+    //stuff
+    //Doc - http://backbonejs.org/#Model
 });
 ```
 
@@ -18,11 +18,11 @@ export default Backbone.Model.extend({
 import Model from './model';
 
 export default Backbone.Collection.extend({
-	model: Model,
+    model: Model,
 
-	initialize() {
-		//do stuff
-	}
+    initialize() {
+        //do stuff
+    }
 });
 ```
 
@@ -30,9 +30,9 @@ export default Backbone.Collection.extend({
 
 ```javascript
 export default Marionette.AppRouter.extend({
-	appRoutes: {
-		'': 'home'
-	}
+    appRoutes: {
+        '': 'home'
+    }
 });
 ```
 
@@ -40,9 +40,9 @@ export default Marionette.AppRouter.extend({
 
 ```javascript
 export default Marionette.Object.extend({
-	home() {
-		console.log('home route');
-	}
+    home() {
+        console.log('home route');
+    }
 });
 ```
 
@@ -50,8 +50,8 @@ export default Marionette.Object.extend({
 
 ```javascript
 export default Marionette.ItemView.extend({
-	//stuff
-	//Doc - http://marionettejs.com/docs/v2.4.4/marionette.itemview.html
+    //stuff
+    //Doc - http://marionettejs.com/docs/v2.4.4/marionette.itemview.html
 });
 ```
 
@@ -61,11 +61,11 @@ export default Marionette.ItemView.extend({
 import ItemView from './itemView';
 
 export default Marionette.CollectionView.extend({
-	childView: ItemView,
+    childView: ItemView,
 
-	initialize() {
-		//do stuff
-	}
+    initialize() {
+        //do stuff
+    }
 });
 ```
 
@@ -75,11 +75,11 @@ export default Marionette.CollectionView.extend({
 import ItemView from './itemView';
 
 export default Marionette.CompositeView.extend({
-	childView: ItemView,
+    childView: ItemView,
 
-	initialize() {
-		//do stuff
-	}
+    initialize() {
+        //do stuff
+    }
 });
 ```
 
@@ -87,8 +87,8 @@ export default Marionette.CompositeView.extend({
 
 ```javascript
 export default Marionette.LayoutView.extend({
-	//stuff
-	//Doc - http://marionettejs.com/docs/v2.4.4/marionette.layoutview.html
+    //stuff
+    //Doc - http://marionettejs.com/docs/v2.4.4/marionette.layoutview.html
 });
 ```
 
@@ -96,24 +96,24 @@ export default Marionette.LayoutView.extend({
 
 ```javascript
 export default Marionette.Behavior.extend({
-	// You can set default options
-	// just like you can in your Backbone Models.
-	// They will be overridden if you pass in an option with the same key.
-	defaults: {
-		"message": "You are destroying!"
-	},
-	
-	// Behaviors have events that are bound to the views DOM.
-	events: {
-		"click @ui.destroy": "warnBeforeDestroy"
-	},
-	
-	warnBeforeDestroy() {
-		alert(this.options.message);
-		// Every Behavior has a hook into the
-		// view that it is attached to.
-		this.view.destroy();
-	}
+    // You can set default options
+    // just like you can in your Backbone Models.
+    // They will be overridden if you pass in an option with the same key.
+    defaults: {
+        "message": "You are destroying!"
+    },
+    
+    // Behaviors have events that are bound to the views DOM.
+    events: {
+        "click @ui.destroy": "warnBeforeDestroy"
+    },
+    
+    warnBeforeDestroy() {
+        alert(this.options.message);
+        // Every Behavior has a hook into the
+        // view that it is attached to.
+        this.view.destroy();
+    }
 });
 ```
 
@@ -124,8 +124,8 @@ export default Marionette.Behavior.extend({
 ```javascript
 "use strict";
 var Model = Backbone.Model.extend({
-	//stuff
-	//Doc - http://backbonejs.org/#Model
+    //stuff
+    //Doc - http://backbonejs.org/#Model
 });
 module.exports = Model;
 ```
@@ -135,7 +135,7 @@ module.exports = Model;
 ```javascript
 "use strict";
 var Collection = Backbone.Collection.extend({
-	model: Backbone.Model.extend()
+    model: Backbone.Model.extend()
 });
 module.exports = Collection;
 ```
@@ -145,9 +145,9 @@ module.exports = Collection;
 ```javascript
 "use strict";
 var Router = Marionette.AppRouter.extend({
-	appRoutes: {
-		'': 'home'
-	}
+    appRoutes: {
+        '': 'home'
+    }
 });
 module.exports = Router;
 ```
@@ -157,12 +157,12 @@ module.exports = Router;
 ```javascript
 "use strict";
 var Object = Marionette.Object.extend({
-	initialize: function(options) {
-		console.log('initialize')
-	},
-	home: function() {
-		console.log('home route');
-	}
+    initialize: function(options) {
+        console.log('initialize')
+    },
+    home: function() {
+        console.log('home route');
+    }
 });
 module.exports = Object;
 ```
@@ -172,8 +172,8 @@ module.exports = Object;
 ```javascript
 "use strict";
 var ItemView = Marionette.ItemView.extend({
-	//stuff
-	//Doc - http://marionettejs.com/docs/v2.4.4/marionette.itemview.html
+    //stuff
+    //Doc - http://marionettejs.com/docs/v2.4.4/marionette.itemview.html
 });
 module.exports = ItemView;
 ```
@@ -183,7 +183,7 @@ module.exports = ItemView;
 ```javascript
 "use strict";
 var CollectionView = Marionette.CollectionView.extend({
-	childView: Marionette.ItemView.extend({})
+    childView: Marionette.ItemView.extend({})
 });
 module.exports = CollectionView;
 ```
@@ -193,7 +193,7 @@ module.exports = CollectionView;
 ```javascript
 "use strict";
 var CompositeView = Marionette.CompositeView.extend({
-	childView: Marionette.ItemView.extend({})
+    childView: Marionette.ItemView.extend({})
 });
 module.exports = CompositeView;
 ```
@@ -203,8 +203,8 @@ module.exports = CompositeView;
 ```javascript
 "use strict";
 var LayoutView = Marionette.LayoutView.extend({
-	//stuff
-	//Doc - http://marionettejs.com/docs/v2.4.4/marionette.layoutview.html
+    //stuff
+    //Doc - http://marionettejs.com/docs/v2.4.4/marionette.layoutview.html
 });
 module.exports = LayoutView;
 ```
@@ -214,24 +214,24 @@ module.exports = LayoutView;
 ```javascript
 "use strict";
 var Behavior = Marionette.Behavior.extend({
-	// You can set default options
-	// just like you can in your Backbone Models.
-	// They will be overridden if you pass in an option with the same key.
-	defaults: {
-		"message": "You are destroying!"
-	},
+    // You can set default options
+    // just like you can in your Backbone Models.
+    // They will be overridden if you pass in an option with the same key.
+    defaults: {
+        "message": "You are destroying!"
+    },
 
-	// Behaviors have events that are bound to the views DOM.
-	events: {
-		"click @ui.destroy": "warnBeforeDestroy"
-	},
+    // Behaviors have events that are bound to the views DOM.
+    events: {
+        "click @ui.destroy": "warnBeforeDestroy"
+    },
 
-	warnBeforeDestroy: function() {
-		alert(this.options.message);
-		// Every Behavior has a hook into the
-		// view that it is attached to.
-		this.view.destroy();
-	}
+    warnBeforeDestroy: function() {
+        alert(this.options.message);
+        // Every Behavior has a hook into the
+        // view that it is attached to.
+        this.view.destroy();
+    }
 });
 module.exports = Behavior;
 ```
@@ -242,13 +242,13 @@ module.exports = Behavior;
 
 ```javascript
 define(['backbone'], function(Backbone) {
-	"use strict";
+    "use strict";
     var Model = Backbone.Model.extend({
-    	//stuff
-    	//Doc - http://backbonejs.org/#Model
+        //stuff
+        //Doc - http://backbonejs.org/#Model
     });
 
-	return Model;
+    return Model;
 });
 ```
 
@@ -256,12 +256,12 @@ define(['backbone'], function(Backbone) {
 
 ```javascript
 define(['backbone'], function(Backbone) {
-	"use strict";
+    "use strict";
     var Collection = Backbone.Collection.extend({
-    	model: Backbone.Model.extend()
+        model: Backbone.Model.extend()
     });
 
-	return Collection;
+    return Collection;
 });
 ```
 
@@ -269,14 +269,14 @@ define(['backbone'], function(Backbone) {
 
 ```javascript
 define(['marionette'], function(Marionette) {
-	"use strict";
+    "use strict";
     var Router = Marionette.AppRouter.extend({
-    	appRoutes: {
-    		'': 'home'
-    	}
+        appRoutes: {
+            '': 'home'
+        }
     });
 
-	return AppRouter;
+    return AppRouter;
 });
 ```
 
@@ -284,17 +284,17 @@ define(['marionette'], function(Marionette) {
 
 ```javascript
 define(['marionette'], function(Marionette) {
-	"use strict";
+    "use strict";
     var Object = Marionette.Object.extend({
-    	initialize: function(options) {
-    		console.log('initialize')
-    	},
-    	home: function() {
-    		console.log('home route');
-    	}
+        initialize: function(options) {
+            console.log('initialize')
+        },
+        home: function() {
+            console.log('home route');
+        }
     });
 
-	return Object;
+    return Object;
 });
 ```
 
@@ -302,13 +302,13 @@ define(['marionette'], function(Marionette) {
 
 ```javascript
 define(['marionette'], function(Marionette) {
-	"use strict";
+    "use strict";
     var ItemView = Marionette.ItemView.extend({
-    	//stuff
-    	//Doc - http://marionettejs.com/docs/v2.4.4/marionette.itemview.html
+        //stuff
+        //Doc - http://marionettejs.com/docs/v2.4.4/marionette.itemview.html
     });
 
-	return ItemView;
+    return ItemView;
 });
 ```
 
@@ -316,12 +316,12 @@ define(['marionette'], function(Marionette) {
 
 ```javascript
 define(['marionette'], function(Marionette) {
-	"use strict";
+    "use strict";
     var CollectionView = Marionette.CollectionView.extend({
-    	childView: Marionette.ItemView.extend({})
+        childView: Marionette.ItemView.extend({})
     });
 
-	return CollectionView;
+    return CollectionView;
 });
 ```
 
@@ -329,12 +329,12 @@ define(['marionette'], function(Marionette) {
 
 ```javascript
 define(['marionette'], function(Marionette) {
-	"use strict";
+    "use strict";
     var CompositeView = Marionette.CompositeView.extend({
-    	childView: Marionette.ItemView.extend({})
+        childView: Marionette.ItemView.extend({})
     });
 
-	return CompositeView;
+    return CompositeView;
 });
 ```
 
@@ -342,13 +342,13 @@ define(['marionette'], function(Marionette) {
 
 ```javascript
 define(['marionette'], function (Marionette) {
-	"use strict";
+    "use strict";
     var LayoutView = Marionette.LayoutView.extend({
-    	//stuff
-    	//Doc - http://marionettejs.com/docs/v2.4.4/marionette.layoutview.html
+        //stuff
+        //Doc - http://marionettejs.com/docs/v2.4.4/marionette.layoutview.html
     });
 
-	return LayoutView;
+    return LayoutView;
 });
 ```
 
@@ -356,29 +356,29 @@ define(['marionette'], function (Marionette) {
 
 ```javascript
 define(['marionette'], function (Marionette) {
-	"use strict";
+    "use strict";
     var Behavior = Marionette.Behavior.extend({
-    	// You can set default options
-    	// just like you can in your Backbone Models.
-    	// They will be overridden if you pass in an option with the same key.
-    	defaults: {
-    		"message": "You are destroying!"
-    	},
+        // You can set default options
+        // just like you can in your Backbone Models.
+        // They will be overridden if you pass in an option with the same key.
+        defaults: {
+            "message": "You are destroying!"
+        },
     
-    	// Behaviors have events that are bound to the views DOM.
-    	events: {
-    		"click @ui.destroy": "warnBeforeDestroy"
-    	},
+        // Behaviors have events that are bound to the views DOM.
+        events: {
+            "click @ui.destroy": "warnBeforeDestroy"
+        },
     
-    	warnBeforeDestroy: function() {
-    		alert(this.options.message);
-    		// Every Behavior has a hook into the
-    		// view that it is attached to.
-    		this.view.destroy();
-    	}
+        warnBeforeDestroy: function() {
+            alert(this.options.message);
+            // Every Behavior has a hook into the
+            // view that it is attached to.
+            this.view.destroy();
+        }
     });
 
-	return Behavior;
+    return Behavior;
 });
 ```
 
