@@ -1,10 +1,16 @@
 {
-    "moduleType": "cjs",
-    "moduleTypes": [
-        "rjs",
-        "cjs",
-        "es6"
-    ],
+    "moduleType": "es6",
+    "moduleTypes": {
+        "rjs": {
+            "dir": "./lib/"
+        },
+        "cjs": {
+            "dir": "./lib/"
+        },
+        "es6": {
+            "dir": "./lib/"
+        }
+    },
     "apps": {
         "rjs": "https://github.com/davidsulc/structuring-backbone-with-requirejs-and-marionette",
         "cjs": "https://github.com/samccone/marionette-browserify",
