@@ -1,5 +1,5 @@
 # Support for per-project config
-*** Ideally via something like .mnrc**
+* ~~Ideally via something like .mnrc~~
 * CLI Pass through --config "file"
     * Support relative and absolute paths
     * Would supersede all other config files
