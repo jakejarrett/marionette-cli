@@ -8,3 +8,10 @@
 
 # Support for custom boilerplate
 * Configured inside of .mnrc
+
+# Add in application debugging
+* Ability to see applications state at any given time
+  * Would probably be achieved via [chrome-remote-interface](https://github.com/cyrus-and/chrome-remote-interface)
+
+* Ability to query/interact application inside of cli
+  * Similar to stepping through code in chrome. 
